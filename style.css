@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./Assets/Poppins/Poppins-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+.navbar{
+    background-color: red;
+    height: 80px;
+    width: 100%;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    height: 100%;
+    width: 50%;
+}
+
+.title {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 35vh;
+    margin-left: 6vw;
+}
+
+.title h3 {
+    font-size: 78px;
+    line-height: 1.2;
+}
+
+.text-gradient {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#2ebbf3, #446e84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    height: 28vw;
+    width: 28vw;
+    background-color: #34A5D0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 70px 5px #629AB6;
+}
+
+.circle img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.second-page{
+    height: 60vh;
+    width: 100%;
+}
+.second-page .title{
+    margin-top: 0vh;
+    margin-left: 3rem;
+}
+.second-page .title h3{
+    font-size: 60px;
+}
+.cardContainer{
+    height: fit-content;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+}
+.card h5{
+    font-size: 30px;
+    width: 70%;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.card img{
+    height: 7rem;
+    width:10rem;
+    object-fit: cover;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    filter: drop-shadow(0 0 5px gold);
+}
+.card .coinstand{
+    right: -3.5rem;
+}
+.card1{
+    background-color: yellowgreen;
+}
+.card2{
+    background-color: royalblue;
+}
+.card3{
+    background-color: salmon;
+}
+.third-page{
+    height: fit-content;
+    width: 100%;
+}
+.third-page .title{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.third-page .title h3{
+    font-size: 60px;
+}
+.third-page .title h3 span{
+    font-size: 60px;
+}
+.info{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .left .title{
+    margin-top: 8rem;
+}
+.info .right img{
+    height: 20rem;
+    width: 35rem;
+    object-fit: cover;
+    background-color: red;
+}
+.points{
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+}
+.fourth-page{
+    height: fit-content;
+    width: 100%;
+}
+.fourth-page .title{
+    margin-top: 4rem;
+    margin-left: 3rem;
+}
+.fourth-page .title h3{
+    font-size: 60px;
+}
+.questionContainer{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+}
+.questionContainer .leftQue,.rightQue{
+    height: 100%;
+    width: 33%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.questionContainer .midQue{
+    height: 100%;
+    width: 30%;
+}
+.question{
+    height: 60%;
+    width: 100%;
+}
+.question h5{
+    font-size: 20px;
+}
+.question p{
+    margin-top: 15px;
+}
+.question button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.questionContainer .midQue img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 20px gold);
+}
+
+.contact-info{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    border-top: 2px solid gray;
+}
+.contact-info .contact-details,.instructor{
+    height: 100%;
+    width: 49%;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+.contact-details h5{
+    font-size: 1.2rem;
+}
+.contact-details img{
+    height: 1.8rem;
+}
+.gmail, .whatsapp, .insta{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 18%;
+    cursor: pointer;
+}
+.gmail:hover h5, .whatsapp:hover h5, .insta:hover h5{
+    font-size: 1.6rem;
+    transition: all ease-in-out 0.4s;
+}
+.gmail:hover img, .whatsapp:hover img, .insta:hover img{
+    height: 2.5rem;
+    transition: all ease-in-out 0.4s;
+}
+.instructor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.instructor h3{
+    font-size: 3rem;
+}
+.instructor h5{
+    font-size: 1.3rem;
+}
